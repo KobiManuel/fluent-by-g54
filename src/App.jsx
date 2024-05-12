@@ -1,7 +1,6 @@
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import Main from "./pages/MainPage/Main";
-import Campaign from "./pages/Campaign/Main";
 import Navbar from "./components/Navbar/Navbar";
 import Login from "./pages/Login/Main";
 import Creator from "./pages/Creator/Main";
@@ -14,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="campaign" element={<Campaign />} />
+        {/* <Route path="campaign" element={<Campaign />} /> */}
         <Route path="login" element={<Login />} />
         <Route path="creator" element={<Creator />} />
         <Route path="creator-account/setup" element={<Setup />} />

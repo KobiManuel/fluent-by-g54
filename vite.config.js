@@ -1,16 +1,17 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import svgReact from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), svgReact()],
   css: {
     preprocessorOptions: {
       scss: {
         additionalData: `
           $bg: #050505;
           $blue: #283849;
-          $white: #faf0e6;
+          $white: #F9F3EC;
           $cg-regular: "ClashGrotesk-Regular";
 $cg-semibold: "ClashGrotesk-Semibold";
 $cg-bold: "ClashGrotesk-Bold";
@@ -35,28 +36,5 @@ $gs-bolditalic: "GeneralSans-BoldItalic";
         `,
       },
     },
-  },
-  webpack(config) {
-    config.module.rules.push({
-      loader: "@svgr/webpack",
-      options: {
-        prettier: false,
-        svgo: true,
-        svgoConfig: {
-          plugins: [
-            {
-              name: "preset-default",
-              params: {
-                overrides: { removeViewBox: false },
-              },
-            },
-          ],
-        },
-        titleProp: true,
-      },
-      test: /\.svg$/,
-    });
-
-    return config;
   },
 });

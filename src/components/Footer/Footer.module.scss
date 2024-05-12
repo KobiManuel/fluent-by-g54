@@ -7,13 +7,14 @@
   padding: 96px 0;
   max-width: 1440px;
   width: 95%;
+  margin: 0 auto;
   &-top {
     display: flex;
     align-items: center;
     gap: 74px;
-    font-family: $cg-semibold;
-    color: white;
-    font-size: 48px;
+
+    color: $white;
+    font-size: 64px;
   }
   &-center {
     display: flex;
@@ -24,9 +25,11 @@
     > li {
       list-style: none;
       > a {
+        font-family: $gs-medium;
         text-decoration: none;
-        font-size: 12px;
-        color: white;
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
       }
     }
   }
@@ -37,12 +40,25 @@
     align-items: center;
     &__left {
       display: flex;
-      gap: 32px;
+      gap: 16px;
       align-items: center;
+      > a {
+        text-decoration: none;
+        padding: 5.33px;
+        > svg {
+          max-width: 21px;
+          max-height: 21px;
+          min-width: 21px;
+          min-height: 21px;
+        }
+      }
     }
     &__right {
-      color: white;
-      font-size: 14px;
+      font-family: $gs-medium;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 24px;
+      color: $white;
     }
   }
 }

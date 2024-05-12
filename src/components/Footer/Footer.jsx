@@ -1,11 +1,17 @@
 import React from "react";
 import styles from "./Footer.module.scss";
 import { Link } from "react-router-dom";
+import Star from "../../assets/Icons/Star.svg?react";
+import Facebook from "../../assets/Icons/facebook.svg?react";
+import Instagram from "../../assets/Icons/_Instagram.svg?react";
+import Twitter from "../../assets/Icons/twitter.svg?react";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <h1 className={styles["footer-top"]}>Fluent</h1>
+      <h1 className={styles["footer-top"]}>
+        <Star /> Fluent <Star />
+      </h1>
       <ul className={styles["footer-center"]}>
         <li>
           <Link to={"/"}>Join as a creator</Link>
@@ -37,9 +43,15 @@ const Footer = () => {
       </ul>
       <div className={styles["footer-bottom"]}>
         <span className={styles["footer-bottom__left"]}>
-          <a></a>
-          <a></a>
-          <a></a>
+          <a>
+            <Facebook />
+          </a>
+          <a>
+            <Instagram />
+          </a>
+          <a>
+            <Twitter />
+          </a>
         </span>
         <p className={styles["footer-bottom__right"]}>
           © 2024 Fluent.io — All Rights Reserved
