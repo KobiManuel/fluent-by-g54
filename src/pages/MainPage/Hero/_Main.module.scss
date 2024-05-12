@@ -1,0 +1,100 @@
+.hero {
+  max-height: 100vh;
+  height: 100vh;
+  background: var(--blue-1);
+  display: flex;
+  flex-direction: column;
+  gap: 63.99px;
+  justify-content: center;
+  align-items: center;
+  > img {
+    width: 100%;
+    height: 224px;
+  }
+  > header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 572px;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(65.14px + 20px);
+    > h3 {
+      font-weight: 800;
+      font-size: 37.19px;
+      line-height: 48px;
+      color: white;
+      text-align: center;
+    }
+    > h6 {
+      font-weight: 400;
+      font-size: 15.88px;
+      line-height: 25.6px;
+      color: white;
+      text-align: center;
+    }
+    .explore {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 19.2px;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 17.9px;
+      > button {
+        padding: 12px 23.56px;
+        background: white;
+        color: #283849;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 12px;
+        border: none;
+        display: flex;
+        width: fit-content;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+  }
+  .imagesContainer {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    overflow: hidden;
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    > div {
+      width: calc(1776px + 6rem);
+      display: flex;
+      align-items: center;
+
+      // justify-content: space-between;
+      gap: 1rem;
+      animation: carousel 12s linear infinite;
+      > img {
+        width: 295.57px;
+        box-shadow: 0 0.5rem 1rem -0.25rem rgb(63, 62, 62);
+      }
+    }
+  }
+}
+
+@keyframes carousel {
+  to {
+    transform: translate(-100%);
+  }
+}

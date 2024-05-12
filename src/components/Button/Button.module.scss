@@ -1,0 +1,65 @@
+.button {
+  padding: 12px 23.56px;
+  background: #283849;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  display: flex;
+  width: 143.56px;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  position: relative;
+  max-height: 45.15px !important;
+  &.transparent {
+    background: transparent !important;
+    border: 1px solid #283849;
+    color: #283849;
+    margin-right: -30px;
+    box-sizing: border-box !important;
+    padding: 10px 23.56px !important;
+    max-height: 45.15px !important;
+    > span {
+      background-color: #283849 !important;
+    }
+    &:hover {
+      color: white;
+      border: 1px solid #585858;
+    }
+  }
+  span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }
+  &:hover {
+    color: #002240;
+    border: 1px solid #585858;
+  }
+  &:hover span {
+    transform: translateY(0) scale(2);
+  }
+  span:nth-child(1) {
+    --n: 1;
+  }
+  span:nth-child(2) {
+    --n: 2;
+  }
+  span:nth-child(3) {
+    --n: 3;
+  }
+  span:nth-child(4) {
+    --n: 4;
+  }
+}

@@ -1,0 +1,47 @@
+@import "./assets/fonts/fonts.scss";
+
+.image1,
+.image3 {
+  background: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > img {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+}
+
+.image2 {
+  background: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+}
+
+.image4 {
+  background: white;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  > img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 100px;
+    object-fit: cover;
+  }
+}

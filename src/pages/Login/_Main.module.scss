@@ -1,0 +1,65 @@
+.login {
+  background-image: url(../../assets/images/engin-akyurt-8PU4UbTahLM-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(100dvh - 130px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &-inner {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    &__top {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+      > h3 {
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      > button {
+        padding: 12px 23.56px;
+        background: #283849;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 12px;
+        border: none;
+        display: flex;
+        width: 143.56px;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        > span {
+          > a {
+            text-decoration: underline;
+            cursor: pointer;
+            color: unset;
+          }
+        }
+      }
+    }
+  }
+}
