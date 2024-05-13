@@ -44,6 +44,9 @@
     display: flex;
     align-items: center;
     gap: 39.66px;
+    @media screen and (max-width: 875px) {
+      display: none;
+    }
 
     > a {
       text-decoration: none;

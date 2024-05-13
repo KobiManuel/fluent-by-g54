@@ -4,6 +4,7 @@ import styles from "./Navbar.module.scss";
 import logo from "../../assets/images/logo.png";
 import logo2 from "../../assets/images/logo2.png";
 import Button from "../Button/Button";
+import MenuIcon from "../MenuIcon/MenuIcon";
 
 const Navbar = () => {
   const location = useLocation();
@@ -34,6 +35,7 @@ const Navbar = () => {
           <Button>Join Us</Button>
         </ul>
       )}
+      <MenuIcon />
     </nav>
   );
 };
