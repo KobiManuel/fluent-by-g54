@@ -7,6 +7,8 @@
   border-radius: 12px;
   border: none;
   display: flex;
+  gap: 12px;
+  align-items: center;
   width: 143.56px;
   justify-content: center;
   cursor: pointer;
@@ -15,6 +17,24 @@
   transition: 0.5s;
   position: relative;
   max-height: 45.15px !important;
+  &.primary {
+    position: relative;
+    border: 1px solid $white;
+    background: rgba(255, 253, 249, 0.1);
+    color: $white;
+    > span {
+      background-color: $white !important;
+    }
+    &:hover {
+      color: $bg;
+      > svg {
+        transition: all 0.4s ease-in-out;
+        > path {
+          fill: $bg;
+        }
+      }
+    }
+  }
   &.transparent {
     background: transparent !important;
     border: 1px solid #283849;

@@ -1,0 +1,103 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  // padding: 96px 0;
+  height: 100vh;
+
+  // .progress-2 {
+  //   background: blue !important;
+  //   width: 20% !important;
+  // }
+
+  .progress-1 {
+    height: auto;
+  }
+
+  // .progress-2 {
+  //   animation: progressAnimation 2s ease-in-out;
+  //   animation-timeline: scroll();
+  // }
+
+  // .progress-3 {
+  //   animation: progressAnimation 2s ease-in-out;
+  //   animation-timeline: scroll();
+  // }
+
+  &-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > h3 {
+      font-family: $cg-medium;
+      font-size: 72px;
+      line-height: 90px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: $white;
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .img-container {
+      width: 45%;
+      display: flex;
+      max-width: 45%;
+      overflow: hidden;
+      .left {
+        width: 100%;
+        transition: all 0.7s ease-in-out;
+
+        &:nth-child(2) {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: translateX(-200%);
+          opacity: 0;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      width: 45%;
+      .progress-card {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        > span {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          > h6 {
+            font-family: $gs-medium;
+            font-size: 30px;
+            line-height: 38px;
+            text-align: left;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

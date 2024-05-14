@@ -12,28 +12,28 @@ export default defineConfig({
           $bg: #050505;
           $blue: #283849;
           $white: #F9F3EC;
+          $gray-4: #BDBDBD;
+          $gray-3: #828282;
           $cg-regular: "ClashGrotesk-Regular";
-$cg-semibold: "ClashGrotesk-Semibold";
-$cg-bold: "ClashGrotesk-Bold";
-
-$gs-regular: "GeneralSans-Regular";
-$gs-medium: "GeneralSans-Medium";
-
-$cg-extralight: "ClashGrotesk-Extralight";
-$cg-light: "ClashGrotesk-Light";
-$cg-medium: "ClashGrotesk-Medium";
-
-$gs-extralight: "GeneralSans-Extralight";
-$gs-extralightitalic: "GeneralSans-ExtralightItalic";
-$gs-light: "GeneralSans-Light";
-$gs-lightitalic: "GeneralSans-LightItalic";
-$gs-italic: "GeneralSans-Italic";
-$gs-mediumitalic: "GeneralSans-MediumItalic";
-$gs-semibold: "GeneralSans-Semibold";
-$gs-semibolditalic: "GeneralSans-SemiboldItalic";
-$gs-bold: "GeneralSans-Bold";
-$gs-bolditalic: "GeneralSans-BoldItalic";
-        `,
+          $cg-bold: "ClashGrotesk-Bold";
+          $cg-semibold: "ClashGrotesk-Semibold";
+          $gs-medium: "GeneralSans-Medium";
+          $gs-regular: "GeneralSans-Regular";
+          $cg-light: "ClashGrotesk-Light";
+          $cg-medium: "ClashGrotesk-Medium";
+    
+          $gs-extralightitalic: "GeneralSans-ExtralightItalic";
+          $gs-light: "GeneralSans-Light";
+          $gs-lightitalic: "GeneralSans-LightItalic";
+          $gs-mediumitalic: "GeneralSans-MediumItalic";
+          $gs-semibolditalic: "GeneralSans-SemiboldItalic";
+          $gs-bold: "GeneralSans-Bold";
+          $gs-bolditalic: "GeneralSans-BoldItalic";
+          $cg-extralight: "ClashGrotesk-Extralight";
+          $gs-extralight: "GeneralSans-Extralight";
+          $gs-italic: "GeneralSans-Italic";
+          $gs-semibold: "GeneralSans-Semibold";
+`,
       },
     },
   },
