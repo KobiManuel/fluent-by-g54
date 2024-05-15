@@ -65,24 +65,11 @@ const CreativesSection = () => {
     };
   }, []);
 
-  useEffect(() => {
-    let firstInterval;
+  // v=spf1 include:spf.efwd.registrar-servers.com ~all
 
+  useEffect(() => {
     if (isVisible && (v1 && v2 && v3) < 100) {
       document.body.style.overflow = "hidden";
-
-      // firstInterval = setInterval(() => {
-      //   if (v1 < 100) setProgress((prev) => ({ ...prev, v1: v1 + 10 }));
-      //   else if (v1 >= 100 && v2 < 100)
-      //     setProgress((prev) => ({ ...prev, v2: v2 + 10 }));
-      //   else if (v1 >= 100 && v2 >= 100 && v3 < 100)
-      //     setProgress((prev) => ({ ...prev, v3: 100 }));
-      //   else {
-      //     clearInterval(firstInterval);
-      //   }
-      // }, 300);
-
-      // return () => clearInterval(firstInterval);
     } else {
       document.body.style.overflow = "auto";
     }
